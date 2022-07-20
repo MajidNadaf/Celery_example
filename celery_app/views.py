@@ -8,4 +8,4 @@ from django.core.mail import send_mail
 def index(request):
     send_mail_task.delay()
     # send_mail("celery working now","Celery is best feature in django","nadafmajid99@gmail.com",["nadafmajid99@gmail.com"],fail_silently=False)
-    return HttpResponse("<h1>Hello World </h1>")
+    return HttpResponse("<h1>Hello, Working with celery is good idea. </h1>")
